@@ -1,7 +1,7 @@
 {
     "id": "e775050c-d28e-47e9-8859-15d499382e6d",
     "version": "0.0.1",
-    "requiredApiVersion": "^1.4.0",
+    "requiredApiVersion": "^1.19.0",
     "iconFile": "icon.png",
     "author": {
         "name": "Chase Sillevis",
@@ -11,5 +11,6 @@
     "name": "golinks",
     "nameSlug": "golinks",
     "classFile": "GolinksApp.ts",
-    "description": "Automatically convert golinks into URLs to your shortlink service."
+    "description": "Automatically convert golinks into URLs to your shortlink service.",
+    "implements": []
 }
