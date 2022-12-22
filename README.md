@@ -2,7 +2,7 @@
 
 Automatically convert golinks (go/some-thing) into URLs to your shortlink service.
 
-![icon.png](neon lit portals in outer space, showing a gateway to popular places all over earth, digital art, 3d)
+![neon lit portals in outer space, showing a gateway to popular places all over earth, digital art, 3d](icon.png)
 
 ## Usage
 
