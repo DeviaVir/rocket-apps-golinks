@@ -85,7 +85,7 @@ export class GolinksApp extends App implements IPreMessageSentModify {
                     return newLink;
                 });
             }
-            builder.setData(msg);
+            await builder.setText(msg.text);
         }
 
         return await builder.getMessage();
