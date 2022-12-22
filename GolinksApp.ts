@@ -62,28 +62,26 @@ export class GolinksApp extends App implements IPreMessageSentModify {
             const usedLinks: Set<string> = new Set();
             golinks.sort((a, b) => b.length - a.length);
             const uniqueGoLinks = [...new Set(golinks)];
-            this.getLogger().log(uniqueGoLinks);
             for (const link of uniqueGoLinks) {
                 const parts = link.split('/');
                 const endLink = parts.slice(1).join('/');
 
                 const newLink = `[${link}](${url.value}${endLink})`
-                this.getLogger().log(endLink);
-                msg.text = msg.text.replace(link, (match, link) => {
-                    if (usedLinks.has(link)) {
+                const regex = new RegExp(link, 'g');
+                msg.text = msg.text.replace(regex, (match, offset) => {
+                    if (usedLinks.has(offset)) {
                         return match;
                     }
 
                     if (typeof msg.text !== 'string') {
                         return match;
                     }
-
-                    if (msg.text[link - 1] === '[') {
-                        // Return the original link if it is preceded by a blockquote
+                    if (offset - 1 >= 0 && msg.text[offset - 1] !== " ") {
+                        // Return the original link if it is neither at the beginning nor preceded by a space.
                         return match;
                     }
 
-                    usedLinks.add(link);
+                    usedLinks.add(offset);
                     return newLink;
                 });
             }
