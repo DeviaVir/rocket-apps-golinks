@@ -4,3 +4,5 @@ node_modules/
 # rc-apps package output
 dist/
 .rcappsconfig
+.rcappsconfig.prod
+.rcappsconfig.dev
