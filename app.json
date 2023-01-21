@@ -1,6 +1,6 @@
 {
     "id": "e775050c-d28e-47e9-8859-15d499382e6d",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "requiredApiVersion": "^1.19.0",
     "iconFile": "icon.png",
     "author": {
@@ -11,7 +11,7 @@
     "name": "golinks",
     "nameSlug": "golinks",
     "classFile": "GolinksApp.ts",
-    "description": "Automatically convert golinks (go/some-thing) into URLs to your shortlink service.",
+    "description": "Automatically converts golinks (\"go/some-thing\") in any message sent in any Rocket.Chat into links to a custom-defined URL-shortener service.",
     "implements": [
         "IPreMessageSentModify"
     ],

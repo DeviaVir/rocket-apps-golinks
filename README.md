@@ -1,8 +1,8 @@
 # Rocket.Chat apps: Golinks
 
-Automatically convert golinks (go/some-thing) into URLs to your shortlink service.
+Automatically converts golinks (`go/some-thing`) in any message sent in any Rocket.Chat into links to a custom-defined URL-shortener service.
 
-![neon lit portals in outer space, showing a gateway to popular places all over earth, digital art, 3d](icon.png)
+![logo](icon.png)
 
 ## Usage
 
