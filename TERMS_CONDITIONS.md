@@ -1,4 +1,4 @@
-## Terms & Conditions
+# Terms & Conditions
 
 By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You're allowed to copy or modify the app, any part of the app, or our trademarks. You’re allowed to attempt to extract the source code of the app, and you're also free to try to translate the app into other languages or make derivative versions. The app itself, and all the trademarks, copyright, database rights, and other intellectual property rights related to it, belong to the world.
 
